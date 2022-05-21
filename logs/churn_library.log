@@ -1,0 +1,5 @@
+root - INFO - Testing import_data: SUCCESS
+root - ERROR - Testing perform_eda(): FAILED
+root - ERROR - Testing encoder_helper(): FAILED
+root - ERROR - Testing perform_feature_engineering(): FAILED
+root - ERROR - Testing train_models(): FAILED
