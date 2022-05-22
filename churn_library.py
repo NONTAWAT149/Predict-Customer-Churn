@@ -74,7 +74,7 @@ def perform_eda(data_df):
     return data_df
 
 
-def encoder_helper(data_df, category_lst, response):
+def encoder_helper(df, category_lst, response):
     '''
     helper function to turn each categorical column into a new column with
     propotion of churn for each category - associated with cell 15 from the notebook
@@ -103,11 +103,11 @@ def encoder_helper(data_df, category_lst, response):
 
         # Add new colume (name feature) if required by user
         if response:
-            data_df[title + '_' + response] = data_lst
+            df[title + '_' + response] = data_lst
         else:
-            data_df[title] = data_lst
+            df[title] = data_lst
 
-    return data_df
+    return df
 
 
 def perform_feature_engineering(data_df, response):

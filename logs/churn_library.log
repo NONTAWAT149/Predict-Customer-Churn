@@ -1,6 +1,10 @@
 root - INFO - Testing import_data: SUCCESS
+root - INFO - Testing output of import_data(): SUCCESS
 root - ERROR - Testing perform_eda(): FAILED
-root - ERROR - Testing input data in encoder_helper(): FAILED
-root - ERROR - Testing encoder_helper(): FAILED
+root - INFO - Testing output data in perform_eda(): SUCCESS
+root - INFO - Testing encoder_helper(): SUCCESS
+root - INFO - Testing input data in encoder_helper(): SUCCESS
 root - ERROR - Testing perform_feature_engineering(): FAILED
+root - ERROR - Testing output data of perform_feature_engineering(): FAILED
+root - ERROR - Testing input data of train_models(): FAILED
 root - ERROR - Testing train_models(): FAILED
