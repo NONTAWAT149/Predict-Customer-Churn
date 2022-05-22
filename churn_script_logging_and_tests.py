@@ -53,6 +53,16 @@ def test_encoder_helper(encoder_helper):
     '''
     test encoder helper
     '''
+
+    # To test that a dataframe is not empty
+    try:
+        assert data_df.shape[0] > 0
+        assert data_df.shape[1] > 0
+        logging.info("Testing input data in encoder_helper(): SUCCESS")
+    except BaseException:
+        logging.error("Testing input data in encoder_helper(): FAILED")
+
+    # To test encoder_helper() function in general
     try:
         encoder_helper()
         logging.info("Testing encoder_helper(): SUCCESS")

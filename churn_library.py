@@ -180,7 +180,7 @@ def classification_report_image(y_train,
     '''
 
     # Random Forest Model
-    plt.rc('figure', figsize=(5, 5))
+    plt.figure(figsize=(5, 5))
     plt.text(0.01,
              1.25,
              str('Random Forest Train'),
@@ -206,7 +206,7 @@ def classification_report_image(y_train,
     plt.savefig(fname='./images/results/rf_results.png')
 
     # Logistic Regression
-    plt.rc('figure', figsize=(5, 5))
+    plt.figure(figsize=(5, 5))
     plt.text(0.01,
              1.25,
              str('Logistic Regression Train'),
